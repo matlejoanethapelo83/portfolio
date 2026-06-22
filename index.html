@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matlejoane Thapelo Motswiri | Data Scientist Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkbg: '#0B0F19',
+                        darkcard: 'rgba(17, 24, 39, 0.7)',
+                        accentBlue: '#3B82F6',
+                        accentCyan: '#06B6D4',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(17, 25, 40, 0.65);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #3B82F6 0%, #06B6D4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-gradient-accent {
+            background: linear-gradient(135deg, #3B82F6 0%, #06B6D4 100%);
+        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0B0F19; }
+        ::-webkit-scrollbar-thumb { background: #1F2937; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #3B82F6; }
+    </style>
+</head>
+<body class="bg-darkbg text-gray-200 font-sans antialiased selection:bg-accentBlue selection:text-white overflow-x-hidden">
+
+    <div class="fixed inset-0 bg-[linear-gradient(to_right,#1f293710_1px,transparent_1px),linear-gradient(to_bottom,#1f293710_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none z-0"></div>
+
+    <header class="fixed top-0 left-0 w-full z-50 glass border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#home" class="text-2xl font-bold tracking-wider text-gradient">MTM</a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium tracking-wide text-gray-400">
+                <a href="#home" class="hover:text-accentCyan transition-colors">Home</a>
+                <a href="#about" class="hover:text-accentCyan transition-colors">About</a>
+                <a href="#skills" class="hover:text-accentCyan transition-colors">Skills</a>
+                <a href="#certifications" class="hover:text-accentCyan transition-colors">Certificates</a>
+                <a href="#services" class="hover:text-accentCyan transition-colors">Services</a>
+                <a href="#projects" class="hover:text-accentCyan transition-colors">Projects</a>
+                <a href="#contact" class="hover:text-accentCyan transition-colors">Contact</a>
+            </nav>
+            <a href="#contact" class="hidden md:inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium text-white border border-accentBlue/40 rounded-full hover:bg-accentBlue/10 transition-all duration-300">
+                Let's Talk
+            </a>
+        </div>
+    </header>
+
+    <section id="home" class="min-h-screen pt-32 flex items-center relative z-10 px-6">
+        <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6 order-2 lg:order-1" data-aos="fade-right" data-aos-duration="1000">
+                <div class="inline-flex items-center space-x-2 bg-accentBlue/10 text-accentCyan text-xs px-4 py-1.5 rounded-full border border-accentBlue/20 font-mono">
+                    <span class="flex h-2 w-2 relative">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-accentCyan opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-accentCyan"></span>
+                    </span>
+                    <span>Available for Data Roles</span>
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
+                    Hi, I'm <span class="text-gradient">Matlejoane Thapelo Motswiri</span>
+                </h1>
+                <p class="text-lg sm:text-xl font-medium text-gray-300 font-mono tracking-tight border-l-2 border-accentBlue pl-4">
+                    Data Science Enthusiast | Business Intelligence Analyst | Machine Learning Practitioner
+                </p>
+                <p class="text-gray-400 max-w-xl text-base sm:text-lg leading-relaxed">
+                    I transform raw data into actionable insights through data analysis, machine learning, and business intelligence solutions. I enjoy uncovering patterns hidden within data and turning them into meaningful solutions that support informed decision-making.
+                </p>
+                 
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#projects" class="px-6 py-3 rounded-xl bg-gradient-accent text-white font-medium hover:opacity-90 shadow-lg shadow-accentBlue/20 transition-all duration-300 transform hover:-translate-y-0.5">
+                        View Projects
+                    </a>
+                    
+                    <a href="Thapelo Matlejoane (CV).pdf" download="Thapelo_Matlejoane_CV.pdf" class="px-6 py-3 rounded-xl glass text-gray-200 font-medium hover:text-white hover:border-gray-600 transition-all duration-300 flex items-center space-x-2">
+                        <i data-lucide="download" class="w-4 h-4"></i>
+                        <span>Download CV</span>
+                    </a>
+                    
+                    <a href="#contact" class="px-6 py-3 rounded-xl text-gray-400 hover:text-accentCyan transition-all duration-300 flex items-center space-x-1">
+                        <span>Contact Me</span>
+                        <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-3 gap-4 pt-10 border-t border-gray-800/60 max-w-lg">
+                    <div class="space-y-1">
+                        <h3 class="text-2xl sm:text-3xl font-bold text-white font-mono text-gradient">6+</h3>
+                        <p class="text-xs uppercase text-gray-500 tracking-wider">Analytics Projects</p>
+                    </div>
+                    <div class="space-y-1">
+                        <h3 class="text-2xl sm:text-3xl font-bold text-white font-mono text-gradient">3+</h3>
+                        <p class="text-xs uppercase text-gray-500 tracking-wider">Core Technologies</p>
+                    </div>
+                    <div class="space-y-1">
+                        <h3 class="text-base sm:text-lg font-bold text-white font-mono mt-1 text-accentCyan">TUT (CSE)</h3>
+                        <p class="text-xs uppercase text-gray-500 tracking-wider">Data Science Intern</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-5 order-1 lg:order-2 flex justify-center" data-aos="fade-left" data-aos-duration="1000">
+                <div class="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 group">
+                    <div class="absolute inset-0 bg-gradient-accent rounded-3xl blur-2xl opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
+                    <div class="w-full h-full rounded-3xl glass border border-gray-700/50 p-3 overflow-hidden relative z-10">
+                        <div class="w-full h-full bg-gray-900 rounded-2xl flex items-center justify-center border border-gray-800 overflow-hidden relative">
+                            <img src="my_profile.png" alt="Matlejoane Thapelo Motswiri Profile" class="w-full h-full object-cover object-[center_top] relative z-10 transition-transform duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-darkbg via-transparent to-transparent opacity-80 z-20"></div>
+                            <div class="absolute bottom-4 left-4 z-30 font-mono text-xs text-gray-400">
+                                [ Matlejoane T. Motswiri ]
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="border-gray-900 my-0">
+
+    <section id="about" class="py-24 relative z-10 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <h2 class="text-xs font-mono uppercase tracking-widest text-accentBlue mb-2">Discovery</h2>
+                <p class="text-3xl sm:text-4xl font-bold text-white">About Me</p>
+                <div class="h-1 w-12 bg-gradient-accent mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                <div class="lg:col-span-5 space-y-6" data-aos="fade-right">
+                    <h3 class="text-xl font-bold text-white">Professional Summary</h3>
+                    <p class="text-gray-400 leading-relaxed text-base sm:text-lg">
+                        Matlejoane Thapelo Motswiri is an aspiring Data Scientist with expertise in data cleaning, statistical analysis, machine learning, and business intelligence. He is passionate about using data-driven approaches to solve real-world challenges and create business value through insightful analysis and visualization.
+                    </p>
+                    <div class="p-6 glass rounded-2xl border-l-4 border-accentCyan">
+                        <p class="text-sm italic text-gray-300">
+                            "Turning noise into structure, and structure into competitive organizational intelligence."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 space-y-8" data-aos="fade-left">
+                    <h3 class="text-xl font-bold text-white mb-6 flex items-center space-x-2">
+                        <i data-lucide="briefcase" class="w-5 h-5 text-accentBlue"></i>
+                        <span>Timeline</span>
+                    </h3>
+
+                    <div class="relative border-l border-gray-800 ml-4 space-y-8">
+                        <div class="relative pl-8">
+                            <span class="absolute -left-2.5 top-1.5 bg-accentCyan w-5 h-5 rounded-full border-4 border-darkbg"></span>
+                            <span class="text-xs font-mono text-accentCyan bg-accentCyan/10 px-2.5 py-0.5 rounded-full border border-accentCyan/20">July 2025 – Present</span>
+                            <h4 class="text-lg font-bold text-white mt-2">Data Science Intern</h4>
+                            <p class="text-sm font-medium text-gray-400">Tshwane University of Technology (CSE)</p>
+                        </div>
+
+                        <div class="relative pl-8">
+                            <span class="absolute -left-2.5 top-1.5 bg-accentBlue w-5 h-5 rounded-full border-4 border-darkbg"></span>
+                            <span class="text-xs font-mono text-accentBlue bg-accentBlue/10 px-2.5 py-0.5 rounded-full border border-accentBlue/20">Graduated: 08 April 2026</span>
+                            <h4 class="text-lg font-bold text-white mt-2">Diploma in Informatics</h4>
+                            <p class="text-sm font-medium text-gray-400">Tshwane University of Technology</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 glass relative z-10 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <h2 class="text-xs font-mono uppercase tracking-widest text-accentCyan mb-2">Capabilities</h2>
+                <p class="text-3xl sm:text-4xl font-bold text-white">Technical & Professional Stack</p>
+                <div class="h-1 w-12 bg-gradient-accent mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="space-y-6" data-aos="fade-right">
+                    <h3 class="text-lg font-bold text-white border-b border-gray-800 pb-2 flex items-center space-x-2">
+                        <i data-lucide="code-2" class="w-5 h-5 text-accentBlue"></i>
+                        <span>Technical Skills</span>
+                    </h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="p-4 rounded-xl bg-gray-900/60 border border-gray-800 hover:border-accentBlue/30 transition-all duration-300 group">
+                            <div class="flex items-center space-x-3">
+                                <div class="p-2 rounded-lg bg-accentBlue/10 text-accentBlue group-hover:bg-accentBlue group-hover:text-white transition-colors duration-300"><i data-lucide="terminal" class="w-5 h-5"></i></div>
+                                <span class="font-medium text-sm text-gray-300">Python</span>
+                            </div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-gray-900/60 border border-gray-800 hover:border-accentBlue/30 transition-all duration-300 group">
+                            <div class="flex items-center space-x-3">
+                                <div class="p-2 rounded-lg bg-accentBlue/10 text-accentBlue group-hover:bg-accentBlue group-hover:text-white transition-colors duration-300"><i data-lucide="database" class="w-5 h-5"></i></div>
+                                <span class="font-medium text-sm text-gray-300">SQL</span>
+                            </div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-gray-900/60 border border-gray-800 hover:border-accentBlue/30 transition-all duration-300 group">
+                            <div class="flex items-center space-x-3">
+                                <div class="p-2 rounded-lg bg-accentBlue/10 text-accentBlue group-hover:bg-accentBlue group-hover:text-white transition-colors duration-300"><i data-lucide="bar-chart-3" class="w-5 h-5"></i></div>
+                                <span class="font-medium text-sm text-gray-300">Power BI</span>
+                            </div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-gray-900/60 border border-gray-800 hover:border-accentBlue/30 transition-all duration-300 group">
+                            <div class="flex items-center space-x-3">
+                                <div class="p-2 rounded-lg bg-accentBlue/10 text-accentBlue group-hover:bg-accentBlue group-hover:text-white transition-colors duration-300"><i data-lucide="filter" class="w-5 h-5"></i></div>
+                                <span class="font-medium text-sm text-gray-300">Data Cleaning</span>
+                            </div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-gray-900/60 border border-gray-800 hover:border-accentBlue/30 transition-all duration-300 group">
+                            <div class="flex items-center space-x-3">
+                                <div class="p-2 rounded-lg bg-accentBlue/10 text-accentBlue group-hover:bg-accentBlue group-hover:text-white transition-colors duration-300"><i data-lucide="pie-chart" class="w-5 h-5"></i></div>
+                                <span class="font-medium text-sm text-gray-300">Data Visualization</span>
+                            </div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-gray-900/60 border border-gray-800 hover:border-accentBlue/30 transition-all duration-300 group">
+                            <div class="flex items-center space-x-3">
+                                <div class="p-2 rounded-lg bg-accentBlue/10 text-accentBlue group-hover:bg-accentBlue group-hover:text-white transition-colors duration-300"><i data-lucide="binary" class="w-5 h-5"></i></div>
+                                <span class="font-medium text-sm text-gray-300">Statistics</span>
+                            </div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-gray-900/60 border border-gray-800 hover:border-accentBlue/30 transition-all duration-300 group">
+                            <div class="flex items-center space-x-3">
+                                <div class="p-2 rounded-lg bg-accentBlue/10 text-accentBlue group-hover:bg-accentBlue group-hover:text-white transition-colors duration-300"><i data-lucide="cpu" class="w-5 h-5"></i></div>
+                                <span class="font-medium text-sm text-gray-300">Machine Learning</span>
+                            </div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-gray-900/60 border border-gray-800 hover:border-accentBlue/30 transition-all duration-300 group">
+                            <div class="flex items-center space-x-3">
+                                <div class="p-2 rounded-lg bg-accentBlue/10 text-accentBlue group-hover:bg-accentBlue group-hover:text-white transition-colors duration-300"><i data-lucide="trending-up" class="w-5 h-5"></i></div>
+                                <span class="font-medium text-sm text-gray-300">Business Intelligence</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-6" data-aos="fade-left">
+                    <h3 class="text-lg font-bold text-white border-b border-gray-800 pb-2 flex items-center space-x-2">
+                        <i data-lucide="briefcase" class="w-5 h-5 text-accentCyan"></i>
+                        <span>Professional Skills</span>
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="p-4 bg-gray-900/30 rounded-xl flex items-start space-x-3 border border-gray-800/40">
+                            <i data-lucide="lightbulb" class="w-5 h-5 text-accentCyan mt-0.5 flex-shrink-0"></i>
+                            <div>
+                                <h4 class="text-sm font-semibold text-gray-200">Problem Solving</h4>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-gray-900/30 rounded-xl flex items-start space-x-3 border border-gray-800/40">
+                            <i data-lucide="message-square" class="w-5 h-5 text-accentCyan mt-0.5 flex-shrink-0"></i>
+                            <div>
+                                <h4 class="text-sm font-semibold text-gray-200">Communication</h4>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-gray-900/30 rounded-xl flex items-start space-x-3 border border-gray-800/40">
+                            <i data-lucide="activity" class="w-5 h-5 text-accentCyan mt-0.5 flex-shrink-0"></i>
+                            <div>
+                                <h4 class="text-sm font-semibold text-gray-200">Analytical Thinking</h4>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-gray-900/30 rounded-xl flex items-start space-x-3 border border-gray-800/40">
+                            <i data-lucide="eye" class="w-5 h-5 text-accentCyan mt-0.5 flex-shrink-0"></i>
+                            <div>
+                                <h4 class="text-sm font-semibold text-gray-200">Critical Thinking</h4>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-gray-900/30 rounded-xl flex items-start space-x-3 border border-gray-800/40 sm:col-span-2">
+                            <i data-lucide="line-chart" class="w-5 h-5 text-accentCyan mt-0.5 flex-shrink-0"></i>
+                            <div>
+                                <h4 class="text-sm font-semibold text-gray-200">Data Interpretation</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section id="certifications" class="py-24 relative z-10 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <h2 class="text-xs font-mono uppercase tracking-widest text-accentBlue mb-2">Credentials</h2>
+                <p class="text-3xl sm:text-4xl font-bold text-white">Certifications & Badges</p>
+                <div class="h-1 w-12 bg-gradient-accent mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Certification 1 -->
+                <div class="p-6 rounded-2xl glass border border-gray-800 hover:border-accentBlue/30 transition-all duration-300 group flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-accentBlue/10 flex items-center justify-center text-accentBlue group-hover:bg-accentBlue group-hover:text-white transition-all duration-300">
+                            <i data-lucide="cloud" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <span class="text-[10px] font-mono text-accentBlue bg-accentBlue/10 px-2 py-0.5 rounded-full uppercase tracking-wider">AWS Academy</span>
+                            <h3 class="text-lg font-bold text-white mt-2 group-hover:text-accentBlue transition-colors">Cloud Foundations / Data Analytics</h3>
+                        </div>
+                        <p class="text-xs text-gray-400 leading-relaxed">
+                            Demonstrated foundational knowledge of cloud infrastructure, core architecture patterns, and utilizing distributed environments for hosting scalable data processes.
+                        </p>
+                    </div>
+                    <div class="pt-6 border-t border-gray-800/60 mt-4 flex items-center justify-between text-xs text-gray-500 font-mono">
+                        <span>Issued: 28 June 2025</span>
+                        <a href="#" class="text-accentCyan hover:underline inline-flex items-center space-x-1">
+                            <span>View Verify</span>
+                            <i data-lucide="external-link" class="w-3 h-3"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certification 2 -->
+                <div class="p-6 rounded-2xl glass border border-gray-800 hover:border-accentCyan/30 transition-all duration-300 group flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-accentCyan/10 flex items-center justify-center text-accentCyan group-hover:bg-accentCyan group-hover:text-white transition-all duration-300">
+                            <i data-lucide="shield-check" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <span class="text-[10px] font-mono text-accentCyan bg-accentCyan/10 px-2 py-0.5 rounded-full uppercase tracking-wider">Microsoft</span>
+                            <h3 class="text-lg font-bold text-white mt-2 group-hover:text-accentCyan transition-colors">Power BI Data Analyst</h3>
+                        </div>
+                        <p class="text-xs text-gray-400 leading-relaxed">
+                            Certified competence in importing, cleaning, modeling, visualizing, and engineering corporate structural metrics using Power BI desktop frameworks.
+                        </p>
+                    </div>
+                    <div class="pt-6 border-t border-gray-800/60 mt-4 flex items-center justify-between text-xs text-gray-500 font-mono">
+                        <span>Issued: 2025</span>
+                        <a href="#" class="text-accentCyan hover:underline inline-flex items-center space-x-1">
+                            <span>View Verify</span>
+                            <i data-lucide="external-link" class="w-3 h-3"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certification 3 -->
+                <div class="p-6 rounded-2xl glass border border-gray-800 hover:border-accentBlue/30 transition-all duration-300 group flex flex-col justify-between" data-aos="fade-up" data-aos-delay="300">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-accentBlue/10 flex items-center justify-center text-accentBlue group-hover:bg-accentBlue group-hover:text-white transition-all duration-300">
+                            <i data-lucide="code" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <span class="text-[10px] font-mono text-accentBlue bg-accentBlue/10 px-2 py-0.5 rounded-full uppercase tracking-wider">Data Science Stack</span>
+                            <h3 class="text-lg font-bold text-white mt-2 group-hover:text-accentBlue transition-colors">Advanced R Programming</h3>
+                        </div>
+                        <p class="text-xs text-gray-400 leading-relaxed">
+                            Advanced coursework certification covering algorithmic markdown generation, complex logistic modeling setups, and exploratory visualization structures.
+                        </p>
+                    </div>
+                    <div class="pt-6 border-t border-gray-800/60 mt-4 flex items-center justify-between text-xs text-gray-500 font-mono">
+                        <span>Issued: 2025</span>
+                        <a href="#" class="text-accentCyan hover:underline inline-flex items-center space-x-1">
+                            <span>View Verify</span>
+                            <i data-lucide="external-link" class="w-3 h-3"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 relative z-10 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <h2 class="text-xs font-mono uppercase tracking-widest text-accentBlue mb-2">Offerings</h2>
+                <p class="text-3xl sm:text-4xl font-bold text-white">Expertise & Services</p>
+                <div class="h-1 w-12 bg-gradient-accent mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-8 rounded-2xl glass hover:border-accentBlue/40 group transition-all duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-accentBlue/10 flex items-center justify-center text-accentBlue group-hover:bg-accentBlue group-hover:text-white transition-all duration-300">
+                            <i data-lucide="layers" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Data Analysis</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed">
+                            Transform raw datasets into actionable business insights through rigorous analytical techniques and descriptive/inferential statistical methods.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="p-8 rounded-2xl glass hover:border-accentCyan/40 group transition-all duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-accentCyan/10 flex items-center justify-center text-accentCyan group-hover:bg-accentCyan group-hover:text-white transition-all duration-300">
+                            <i data-lucide="presentation" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Data Visualization Dashboards</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed">
+                            Create intuitive, highly interactive dashboards and visual reports that simplify complex performance landscapes and support data-driven choices.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="p-8 rounded-2xl glass hover:border-accentBlue/40 group transition-all duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="300">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-accentBlue/10 flex items-center justify-center text-accentBlue group-hover:bg-accentBlue group-hover:text-white transition-all duration-300">
+                            <i data-lucide="activity" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Business Intelligence (Power BI)</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed">
+                            Develop powerful business intelligence engineering systems inside Power BI to track performance metrics, map operational trends, and guide executives.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 glass relative z-10 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <h2 class="text-xs font-mono uppercase tracking-widest text-accentCyan mb-2">Showcase</h2>
+                <p class="text-3xl sm:text-4xl font-bold text-white">Featured Projects</p>
+                <div class="h-1 w-12 bg-gradient-accent mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project 1 -->
+                <div class="rounded-2xl overflow-hidden glass hover:border-gray-700 transition-all duration-300 flex flex-col justify-between" data-aos="fade-up">
+                    <div class="p-6 space-y-4">
+                        <div class="h-40 bg-gray-900 rounded-xl flex items-center justify-center border border-gray-800 mb-2 relative overflow-hidden">
+                            <img src="https://i.postimg.cc/Qx6LDDG6/Whats-App-Image-2026-06-19-at-13-13-27.jpg" alt="Ride Hailing Services Profile" class="w-full h-full object-cover">
+                            <div class="absolute bottom-3 left-3 bg-darkbg/80 border border-gray-800 text-xs text-gray-400 font-mono px-2 py-0.5 rounded">Analytics Platform Visual</div>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Ride Hailing Services</h3>
+                        <p class="text-xs text-gray-400 leading-relaxed">
+                            Developed a machine learning model to predict the total ride duration of taxi trips using complex algorithmic structural parameters.
+                        </p>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 flex flex-wrap gap-2">
+                        <span class="text-[11px] font-mono bg-accentBlue/10 text-accentBlue px-2.5 py-0.5 rounded-full border border-accentBlue/20">Python</span>
+                        <span class="text-[11px] font-mono bg-accentCyan/10 text-accentCyan px-2.5 py-0.5 rounded-full border border-accentCyan/20">Machine Learning</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="rounded-2xl overflow-hidden glass hover:border-gray-700 transition-all duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
+                    <div class="p-6 space-y-4">
+                        <div class="h-40 bg-gray-900 rounded-xl flex items-center justify-center border border-gray-800 mb-2 relative overflow-hidden">
+                            <img src="https://i.postimg.cc/htdfQprt/cardio.jpg" alt="Cardio Good Fitness Profile" class="w-full h-full object-cover">
+                            <div class="absolute bottom-3 left-3 bg-darkbg/80 border border-gray-800 text-xs text-gray-400 font-mono px-2 py-0.5 rounded">EDA Graph Visual</div>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Cardio Good Fitness</h3>
+                        <p class="text-xs text-gray-400 leading-relaxed">
+                            Conducted Exploratory Data Analysis (EDA) using summary statistics and visualizations to uncover detailed customer metrics and business health insights.
+                        </p>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 flex flex-wrap gap-2">
+                        <span class="text-[11px] font-mono bg-accentBlue/10 text-accentBlue px-2.5 py-0.5 rounded-full border border-accentBlue/20">R</span>
+                        <span class="text-[11px] font-mono bg-accentCyan/10 text-accentCyan px-2.5 py-0.5 rounded-full border border-accentCyan/20">Data Visualization</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <a href="Uber-Report-Thapelo.html" target="_blank" class="rounded-2xl overflow-hidden glass border border-gray-800/80 hover:border-accentBlue/40 hover:shadow-lg hover:shadow-accentBlue/5 transition-all duration-300 flex flex-col justify-between group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="p-6 space-y-4">
+                        <div class="h-40 bg-gray-900 rounded-xl flex items-center justify-center border border-gray-800 mb-2 relative overflow-hidden">
+                            <img src="https://i.postimg.cc/kgvmBpZ3/Whats-App-Image-2026-06-19-at-13-24-38.jpg" alt="Uber Technologies Analysis Visual" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-102">
+                            <div class="absolute bottom-3 left-3 bg-darkbg/80 border border-gray-800 text-xs text-gray-400 font-mono px-2 py-0.5 rounded">Growth Trend Visual</div>
+                            <div class="absolute top-3 right-3 bg-accentBlue/90 text-white font-mono text-[10px] uppercase tracking-wider px-2 py-1 rounded flex items-center space-x-1 shadow-md">
+                                <span>View Report</span>
+                                <i data-lucide="external-link" class="w-3 h-3"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-bold text-white group-hover:text-accentBlue transition-colors">Uber Technologies Analysis</h3>
+                        <p class="text-xs text-gray-400 leading-relaxed">
+                            Extracted actionable insights from market transactional data to support corporate strategic decision-making matrices and long-term asset optimization.
+                        </p>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 flex flex-wrap gap-2">
+                        <span class="text-[11px] font-mono bg-accentBlue/10 text-accentBlue px-2.5 py-0.5 rounded-full border border-accentBlue/20">R</span>
+                        <span class="text-[11px] font-mono bg-accentCyan/10 text-accentCyan px-2.5 py-0.5 rounded-full border border-accentCyan/20">Data Analytics</span>
+                    </div>
+                </a>
+
+                <!-- Project 4 -->
+                <a href="Presentation1 sas Thapelo.pptx" download class="rounded-2xl overflow-hidden glass border border-gray-800/80 hover:border-accentBlue/40 hover:shadow-lg hover:shadow-accentBlue/5 transition-all duration-300 flex flex-col justify-between group" data-aos="fade-up">
+                    <div class="p-6 space-y-4">
+                        <div class="h-40 bg-gray-900 rounded-xl flex items-center justify-center border border-gray-800 mb-2 relative overflow-hidden">
+                            <img src="https://i.postimg.cc/cH0Hj33q/Whats-App-Image-2026-06-19-at-14-04-35.jpg" alt="Student Academic Performance Visual" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-102">
+                            <div class="absolute bottom-3 left-3 bg-darkbg/80 border border-gray-800 text-xs text-gray-400 font-mono px-2 py-0.5 rounded">Performance Matrix Dashboard</div>
+                            <div class="absolute top-3 right-3 bg-accentCyan/90 text-white font-mono text-[10px] uppercase tracking-wider px-2 py-1 rounded flex items-center space-x-1 shadow-md">
+                                <span>Get Presentation</span>
+                                <i data-lucide="download" class="w-3 h-3"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-bold text-white group-hover:text-accentCyan transition-colors">Student Academic Performance</h3>
+                        <p class="text-xs text-gray-400 leading-relaxed">
+                            Performed targeted pipeline data cleaning, advanced feature engineering, and robust graphical orchestration to evaluate complex student failure risks.
+                        </p>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 flex flex-wrap gap-2">
+                        <span class="text-[11px] font-mono bg-accentBlue/10 text-accentBlue px-2.5 py-0.5 rounded-full border border-accentBlue/20">SAS</span>
+                        <span class="text-[11px] font-mono bg-accentCyan/10 text-accentCyan px-2.5 py-0.5 rounded-full border border-accentCyan/20">Power BI</span>
+                    </div>
+                </a>
+
+                <!-- Project 5 -->
+                <div class="rounded-2xl overflow-hidden glass hover:border-gray-700 transition-all duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
+                    <div class="p-6 space-y-4">
+                        <div class="h-40 bg-gray-900 rounded-xl flex items-center justify-center border border-gray-800 mb-2 relative overflow-hidden">
+                            <img src="https://i.postimg.cc/mkW0V319/Whats-App-Image-2026-06-19-at-14-10-47.jpg" alt="Food Prices Comparative Analysis Visual" class="w-full h-full object-cover">
+                            <div class="absolute bottom-3 left-3 bg-darkbg/80 border border-gray-800 text-xs text-gray-400 font-mono px-2 py-0.5 rounded">Market Trend Dashboard</div>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Food Prices Comparative Analysis</h3>
+                        <p class="text-xs text-gray-400 leading-relaxed">
+                            Compared agricultural macro commodity food prices across a five-year economic timeline window to accurately map market standard anomalies.
+                        </p>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 flex flex-wrap gap-2">
+                        <span class="text-[11px] font-mono bg-accentBlue/10 text-accentBlue px-2.5 py-0.5 rounded-full border border-accentBlue/20">R</span>
+                        <span class="text-[11px] font-mono bg-accentCyan/10 text-accentCyan px-2.5 py-0.5 rounded-full border border-accentCyan/20">Data Analytics</span>
+                    </div>
+                </div>
+
+                <!-- Project 6 (PPTX DOWNLOAD LINKED) -->
+                <a href="The Relationship Between Car Use, Age.pptx" download class="rounded-2xl overflow-hidden glass border border-gray-800/80 hover:border-accentBlue/40 hover:shadow-lg hover:shadow-accentBlue/5 transition-all duration-300 flex flex-col justify-between group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="p-6 space-y-4">
+                        <div class="h-40 bg-gray-900 rounded-xl flex items-center justify-center border border-gray-800 mb-2 relative overflow-hidden">
+                            <img src="https://i.postimg.cc/TPfHSdBX/Whats-App-Image-2026-06-22-at-09-54-49.jpg" alt="The Relationship Between Car Use, Age, and Accidents Analysis Visual" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-102">
+                            <div class="absolute bottom-3 left-3 bg-darkbg/80 border border-gray-800 text-xs text-gray-400 font-mono px-2 py-0.5 rounded">Statistical Trend Analytics</div>
+                            <div class="absolute top-3 right-3 bg-accentCyan/90 text-white font-mono text-[10px] uppercase tracking-wider px-2 py-1 rounded flex items-center space-x-1 shadow-md">
+                                <span>Get Presentation</span>
+                                <i data-lucide="download" class="w-3 h-3"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-bold text-white group-hover:text-accentCyan transition-colors">The Relationship Between Car Use, Age, and Accidents</h3>
+                        <p class="text-xs text-gray-400 leading-relaxed">
+                            Investigated safety metrics by cleaning raw data frameworks in R, generating descriptive models, mapping accident probabilities across age bins, and identifying commercial risk behaviors.
+                        </p>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 flex flex-wrap gap-2">
+                        <span class="text-[11px] font-mono bg-accentBlue/10 text-accentBlue px-2.5 py-0.5 rounded-full border border-accentBlue/20">R / Data Cleaning</span>
+                        <span class="text-[11px] font-mono bg-accentCyan/10 text-accentCyan px-2.5 py-0.5 rounded-full border border-accentCyan/20">Logistic Regression</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 relative z-10 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <h2 class="text-xs font-mono uppercase tracking-widest text-accentBlue mb-2">Connection</h2>
+                <p class="text-3xl sm:text-4xl font-bold text-white">Get In Touch</p>
+                <div class="h-1 w-12 bg-gradient-accent mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-5 space-y-6" data-aos="fade-right">
+                    <h3 class="text-xl font-bold text-white">Let's collaborate on your next project</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Whether you are looking for data insights, advanced descriptive modeling, business intelligence dashboards, or operational strategy support, feel free to reach out. Drop a message or contact me directly via email or professional socials.
+                    </p>
+                    
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center space-x-4 p-4 rounded-xl bg-gray-900/40 border border-gray-800">
+                            <div class="w-10 h-10 rounded-lg bg-accentBlue/10 flex items-center justify-center text-accentBlue">
+                                <i data-lucide="mail" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 font-mono uppercase">Email</p>
+                                <a href="mailto:matlejoanethapelo83@gmail.com" class="text-sm font-medium text-gray-200 hover:text-accentCyan transition-colors">matlejoanethapelo83@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4 p-4 rounded-xl bg-gray-900/40 border border-gray-800">
+                            <div class="w-10 h-10 rounded-lg bg-accentCyan/10 flex items-center justify-center text-accentCyan">
+                                <i data-lucide="linkedin" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 font-mono uppercase">LinkedIn</p>
+                                <a href="#" class="text-sm font-medium text-gray-200 hover:text-accentCyan transition-colors">linkedin.com/in/yourusername</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4 p-4 rounded-xl bg-gray-900/40 border border-gray-800">
+                            <div class="w-10 h-10 rounded-lg bg-accentBlue/10 flex items-center justify-center text-accentBlue">
+                                <i data-lucide="map-pin" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 font-mono uppercase">Location</p>
+                                <p class="text-sm font-medium text-gray-200">Gauteng, South Africa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7" data-aos="fade-left">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="glass p-8 rounded-2xl border border-gray-800 space-y-6">
+                        <input type="hidden" name="access_key" value="9b324c03-5439-4398-a771-9fec16e1ceb3">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="text-xs font-mono uppercase text-gray-400">Your Name</label>
+                                <input type="text" name="name" required placeholder="John Doe" class="w-full bg-darkbg border border-gray-800 rounded-xl px-4 py-3 text-sm text-gray-200 placeholder-gray-600 focus:outline-none focus:border-accentBlue transition-colors">
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-xs font-mono uppercase text-gray-400">Email Address</label>
+                                <input type="email" name="email" required placeholder="john@example.com" class="w-full bg-darkbg border border-gray-800 rounded-xl px-4 py-3 text-sm text-gray-200 placeholder-gray-600 focus:outline-none focus:border-accentBlue transition-colors">
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-xs font-mono uppercase text-gray-400">Subject</label>
+                            <input type="text" name="subject" required placeholder="Project Discussion" class="w-full bg-darkbg border border-gray-800 rounded-xl px-4 py-3 text-sm text-gray-200 placeholder-gray-600 focus:outline-none focus:border-accentBlue transition-colors">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-xs font-mono uppercase text-gray-400">Message</label>
+                            <textarea rows="5" name="message" required placeholder="Hi Thapelo, I'd love to talk about a data pipeline project..." class="w-full bg-darkbg border border-gray-800 rounded-xl px-4 py-3 text-sm text-gray-200 placeholder-gray-600 focus:outline-none focus:border-accentBlue transition-colors resize-none"></textarea>
+                        </div>
+                        
+                        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+                        <button type="submit" class="w-full py-4 bg-gradient-accent text-white font-medium rounded-xl shadow-lg shadow-accentBlue/20 hover:opacity-90 transition-opacity">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true });
+        lucide.createIcons();
+    </script>
+</body>
+</html>
